@@ -7,3 +7,11 @@ def print_matrix_integer(matrix=[[]]):
             else:
                 print("{:d}".format(matrix[i][j]), end="")
         print()
+
+
+# for row in matrix:
+#         for el in row:
+#             if el != row[-1]:
+#                 print("{:d}".format(el), end=" ")
+#             else:
+#                 print("{:d}".format(el), end="")
