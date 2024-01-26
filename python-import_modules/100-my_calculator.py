@@ -23,4 +23,4 @@ if __name__ == "__main__":
         sys.exit(0)
     elif sign_arg == '/':
         print("{} / {} = {}".format(a, b, calculator_1.div(a, b)))
-       sys. exit(0)
+        sys.exit(0)
