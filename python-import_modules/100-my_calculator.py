@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import calculator_1
+from calculator_1 import add, sub, div, mul
 import sys
 if __name__ == "__main__":
     sign = "-*/+"
@@ -13,14 +13,14 @@ if __name__ == "__main__":
         print("Unknown operator. Available operators: +, -, * and /")
         sys.exit(1)
     elif sign_arg == '+':
-        print("{} + {} = {}".format(a, b, calculator_1.add(a, b)))
+        print("{} + {} = {}".format(a, b, add(a, b)))
         sys.exit(0)
     elif sign_arg == '-':
-        print("{} - {} = {}".format(a, b, calculator_1.sub(a, b)))
+        print("{} - {} = {}".format(a, b, sub(a, b)))
         sys.exit(0)
     elif sign_arg == '*':
-        print("{} * {} = {}".format(a, b, calculator_1.mul(a, b)))
+        print("{} * {} = {}".format(a, b, mul(a, b)))
         sys.exit(0)
     elif sign_arg == '/':
-        print("{} / {} = {}".format(a, b, calculator_1.div(a, b)))
+        print("{} / {} = {}".format(a, b, div(a, b)))
         sys.exit(0)
