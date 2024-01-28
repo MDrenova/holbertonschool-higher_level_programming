@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-import logging
-(lambda logger: logger.warning("#pythoniscool"))(logging.getLogger(__name__))
+import os
+os.write(1, b'#pythoniscool\n')
