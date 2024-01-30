@@ -14,6 +14,7 @@ def roman_to_int(roman_string):
     for letter in roman_string:
         if letter in single_dictionary:
             result += single_dictionary[letter]
+    return result
 # def roman_to_int(roman_string):
 #     if isinstance(roman_string, str) is False or roman_string is None:
 #         return 0
