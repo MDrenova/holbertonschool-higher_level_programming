@@ -2,6 +2,8 @@
 """
 Adds two numbers together.
 """
+
+
 def add_integer(a, b=98):
     """
     Parameters:
@@ -14,8 +16,7 @@ def add_integer(a, b=98):
     Example:
     add(2, 3)
     5
-    """ 
+    """
     if not all(isinstance(i, (int, float)) for i in (a, b)):
         raise TypeError("a must be an integer or b must be an integer")
-    else:
-        return int(a + b)   
+    return int(a + b)
