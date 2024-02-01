@@ -17,6 +17,10 @@ def add_integer(a, b=98):
     add(2, 3)
     5
     """
-    if not all(isinstance(i, (int, float)) for i in (a, b)):
-        raise TypeError("a must be an integer or b must be an integer")
+    # if not all(isinstance(i, (int, float)) for i in (a, b)):
+    #     raise TypeError("a must be an integer or b must be an integer")
+    if type(a) not in [int, float]:
+        raise TypeError("a must be an integer")
+    if type(b) not in [int, float]:
+        raise TypeError("b must be an integer")
     return int(a + b)
