@@ -23,7 +23,7 @@ The size mus not be float or les then 0
 
     >>> print_square(-2)
     Traceback (most recent call last)
-    TypeError: size must be an integer
+    ValueError: size must be >= 0
 
 If size isn't int:
     >>> print_square("2.2")
