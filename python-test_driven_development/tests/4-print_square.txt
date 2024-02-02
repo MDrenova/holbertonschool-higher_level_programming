@@ -15,25 +15,22 @@ The size must not be 0:
     >>> print_square(0)
 
 
-The size mus not be float or les then 0
-    >>> print_square(2.2)
-    Traceback (most recent call last)
-    TypeError: size must be an integer
+Size argument should be an int
 
-The size mus not be float or les then 0
-    >>> print_square(-2)
-    Traceback (most recent call last)
-    ValueError: size must be >= 0
+	>>> print_square('.!.')
+	Traceback (most recent call last):
+	TypeError: size must be an integer
 
-The size mus not be float or les then 0
-    >>> print_square(-2.2)
-    Traceback (most recent call last)
-    ValueError: size must be >= 0
+Size cannot be a float type or less than 0
 
-If size isn't int:
-    >>> print_square("2.2")
-    Traceback (most recent call last)
-    TypeError: size must be an integer
+	>>> print_square(-1.5)
+	Traceback (most recent call last):
+        TypeError: size must be an integer
+
+size cannot be lower than 0
+	>>> print_square(-2)
+	Traceback (most recent call last):
+        ValueError: size must be >= 0
 
 You need at least an argument
 	>>> print_square()
