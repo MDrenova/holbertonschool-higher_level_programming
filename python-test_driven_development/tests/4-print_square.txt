@@ -1,0 +1,36 @@
+"""
+Print square
+
+First import ``print_square'' from the ``4-print_square`` file:
+    >>> print_square = __import__('4-print_square').print_square
+
+Parameters:
+    size: size of length of square.
+
+The size if int:
+    >>> print_square(1)
+    #
+
+The size must not be 0:
+    >>> print_square(0)
+    Traceback (most recent call last)
+    ValueError: size must be >= 0
+
+The size mus not be float or les then 0
+    >>> print_square(2.2)
+    Traceback (most recent call last)
+    TypeError: size must be an integer
+
+    >>> print_square(-2)
+    Traceback (most recent call last)
+    TypeError: size must be an integer
+
+If size isn't int:
+    >>> print_square("2.2")
+    Traceback (most recent call last)
+    TypeError: size must be an integer
+
+You need at least an argument
+	>>> print_square()
+	Traceback (most recent call last):
+	TypeError: print_square() missing 1 required positional argument: 'size'
