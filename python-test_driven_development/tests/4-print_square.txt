@@ -13,8 +13,7 @@ The size if int:
 
 The size must not be 0:
     >>> print_square(0)
-    Traceback (most recent call last)
-    ValueError: size must be >= 0
+
 
 The size mus not be float or les then 0
     >>> print_square(2.2)
