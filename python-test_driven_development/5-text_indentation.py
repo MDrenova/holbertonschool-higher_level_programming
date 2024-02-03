@@ -7,17 +7,17 @@ this type of characters . ? !
 '''
 
 
-def print_square(size):
+def text_indentation(text):
     '''
 
     Function that prints the text given as argument
     and inserting newlines when encountaring this
     type of characters . ? !
     '''
-    if not isinstance(size, int):
-        raise TypeError("size must be an integer")
-    if size < 0:
-        raise ValueError("size must be >= 0")
-    for row in range(size):
-        print("#" * size, end="")
-        print()
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+    spec_char = ".?:"
+
+    for i in spec_char:
+        text = text.replace(i + " ", i + "\n\n")
+    print(text, end="")
