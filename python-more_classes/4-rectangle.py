@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Write an empty class Rectangle that defines a rectangle with
-    width, height, area and perimetor public methods. and str
+    width, height, area and perimetor public methods. and str, repr
 """
 
 
