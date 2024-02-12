@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''Write the first class Base'''
-Base = __import__("base").Base
+from .base import Base
 
 
 class Rectangle(Base):
