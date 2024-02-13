@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''Write the first class Base'''
-from .base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -68,3 +68,7 @@ class Rectangle(Base):
         '''Dispaly rectangle'''
         for _ in range(self.height):
             print("#" * self.width)
+
+    def __str__(self):
+        return (f"[Rectangle] ({self.id}) <{self.x}>/<{self.y}>"
+                f"- <{self.width}>/<{self.height}>")
