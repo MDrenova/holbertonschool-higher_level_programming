@@ -79,10 +79,12 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         '''Update class that assigns an argument'''
         arg_list = ["id", "width", "height", "x", "y"]
-        for arg_name, arg_value in zip(arg_list, args):
-            setattr(self, arg_name, arg_value)
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+        if len(args) > 0:
+            for arg_name, arg_value in zip(arg_list, args):
+                setattr(self, arg_name, arg_value)
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     def to_dictionary(self):
         '''dictionary'''
