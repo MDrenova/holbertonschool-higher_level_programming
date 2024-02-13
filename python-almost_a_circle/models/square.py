@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''Write the first class Base'''
-from rectangle import Rectangle
+from .rectangle import Rectangle
 
 
 class Square(Rectangle):
