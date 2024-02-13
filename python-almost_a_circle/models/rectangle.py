@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''Write the first class Base'''
-from .base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -66,5 +66,5 @@ class Rectangle(Base):
 
     def display(self):
         '''Dispaly rectangle'''
-        for _ in self.height:
+        for _ in range(self.height):
             print("#" * self.width)
