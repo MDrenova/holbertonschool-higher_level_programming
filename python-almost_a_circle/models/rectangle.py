@@ -77,6 +77,7 @@ class Rectangle(Base):
                 f" - {self.width}/{self.height}")
 
     def update(self, *args):
+        '''Update class that assigns an argument'''
         arg_list = ["id", "width", "height", "x", "y"]
         for arg_name, arg_value in zip(arg_list, args):
             setattr(self, arg_name, arg_value)
