@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''Write the first class Base'''
-from .rectangle import Rectangle
+from rectangle import Rectangle
 
 
 class Square(Rectangle):
@@ -10,4 +10,4 @@ class Square(Rectangle):
 
     def __str__(self):
         '''Overwrite str square'''
-        return (f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}")
+        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
