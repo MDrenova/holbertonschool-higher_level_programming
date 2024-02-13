@@ -75,3 +75,8 @@ class Rectangle(Base):
         '''Overwrite str'''
         return (f"[Rectangle] ({self.id}) {self.x}/{self.y}"
                 f" - {self.width}/{self.height}")
+
+    def update(self, *args):
+        arg_list = ["id", "width", "height", "x", "y"]
+        for arg_name, arg_value in zip(arg_list, args):
+            setattr(self, arg_name, arg_value)
