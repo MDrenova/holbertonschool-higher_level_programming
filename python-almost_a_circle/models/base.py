@@ -43,8 +43,8 @@ class Base:
     @classmethod
     def create(cls, **dictionary):
         if cls.__name__ == "Square":
-            def_class = cls(4, 3, 0)
+            def_class = cls(4)
         else:
-            def_class = cls(5, 3, 0, 0)
+            def_class = cls(5, 3)
         def_class.update(**dictionary)
         return def_class
