@@ -25,9 +25,9 @@ class Base:
     def save_to_file(cls, list_objs):
         if cls is None:
             cls = "Rectangle"
-        filename = cls.__name__  + ".json"
+        filename = cls.__name__ + ".json"
         if list_objs is None:
-                list_objs = []
+            list_objs = []
         serialized_data = [obj.to_dictionary() for obj in list_objs]
         json_string = cls.to_json_string(serialized_data)
 
