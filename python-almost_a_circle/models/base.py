@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''Write the first class Base'''
 import json
+import os.path
 
 
 class Base:
@@ -48,3 +49,13 @@ class Base:
             def_class = cls(5, 3)
         def_class.update(**dictionary)
         return def_class
+
+    @classmethod
+    def load_from_file(cls):
+        filename = cls.__name__ + ".json"
+        if not os.path.exists(filename):
+            return []
+
+        with open(filename, 'r') as file:
+            lines_dict = cls.from_json_string(file.read())
+        return [cls.create(**dict_instance) for dict_instance in lines_dict]
