@@ -2,7 +2,8 @@
 CREATE TABLE IF NOT EXISTS second_table(
     id int AUTO_INCREMENT,
     name varchar(256),
-    score int;
+    score int,
+    PRIMARY KEY (id)
 );
 
 INSERT INTO second_table(name, score)
