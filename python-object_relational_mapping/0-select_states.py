@@ -12,7 +12,7 @@ if __name__ == "__main__":
         host="localhost",  # replace with your host name
         port=3306,  # add port
         user=argv[1],  # replace with your username
-        password=argv[2],  # replace with your password
+        passwd=argv[2],  # replace with your password
         database=argv[3]  # replace with your database name
     )
 
