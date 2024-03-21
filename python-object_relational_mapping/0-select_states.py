@@ -2,6 +2,7 @@
 '''
 Write a script that lists all states from the database hbtn_0e_0_usa
 '''
+
 import MySQLdb
 from sys import argv
 
@@ -16,17 +17,17 @@ if __name__ == "__main__":
     )
 
     # Create a cursor object
-    cursor = db.cursor()
+    cur = db.cursor()
 
     # Execute a query
-    cursor.execute("SELECT * FROM states ORDER BY id")
+    cur.execute("SELECT * FROM states ORDER BY id")
 
     # Fetch all the rows
-    rows = cursor.fetchall()
+    rows = cur.fetchall()
 
     for row in rows:
         print(row)
 
     # Close the connection
-    cursor.close()
+    cur.close()
     db.close()
