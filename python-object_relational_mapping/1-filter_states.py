@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 '''
-Write a script that lists all states starting with N from the database hbtn_0e_0_usa
+Write a script that lists all states starting with N
+from the database hbtn_0e_0_usa
 '''
 
 import MySQLdb
