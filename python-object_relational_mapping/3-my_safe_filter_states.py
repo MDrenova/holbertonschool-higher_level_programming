@@ -21,7 +21,8 @@ if __name__ == "__main__":
     cur = db.cursor()
 
     # Execute a query
-    cur.execute("SELECT * FROM states WHERE name ORDER BY id", (argv[4],))
+    cur.execute("SELECT * FROM states WHERE name LIKE BINARY %s ORDER BY id",
+                (argv[4],))
 
     # Fetch all the rows
     rows = cur.fetchall()
