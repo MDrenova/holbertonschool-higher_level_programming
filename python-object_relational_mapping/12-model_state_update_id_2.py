@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""Update the State object with id=2 with "New Mexico" to the database hbtn_0e_6_usa"""
+"""Update the State object with id=2 with "New Mexico"
+to the database hbtn_0e_6_usa"""
 
 from sys import argv
 from sqlalchemy import create_engine
