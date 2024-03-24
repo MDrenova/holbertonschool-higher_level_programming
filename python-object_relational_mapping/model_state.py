@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Define a SQLAlchemy model class called "State"
+""" Define a SQLAlchemy model class called 'State'"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 
